@@ -98,7 +98,7 @@ hr {
   width: 70%;
   font-size: 0.75rem;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   flex-direction: column;
 }
 .item-field {
