@@ -11,7 +11,6 @@ const total = {
   eyebrows: 15,
   glasses: 17,
   clothing1: 5,
-  clothing2: 5,
   hats: 28,
 };
 let body = [];
@@ -91,17 +90,6 @@ for (var i = 0; i < total.clothing1; i++) {
     />
   );
 }
-let clothing2 = [];
-for (var i = 0; i < total.clothing2; i++) {
-  clothing2.push(
-    <img
-      className="item-img"
-      key={i + 1}
-      alt={""}
-      src={`character/clothes/layer_2/${i + 1}.png`}
-    />
-  );
-}
 let hat = [];
 for (var i = 0; i < total.hats; i++) {
   hat.push(
@@ -124,14 +112,14 @@ function App() {
   const [hatItem, setHatItem] = useState(3);
 
   const randomize = () => {
-    setBodyItem(Math.floor(Math.random() * total.body));
-    setEyesItem(Math.floor(Math.random() * total.eyes));
-    seteyebrowsItem(Math.floor(Math.random() * total.eyebrows));
-    setHairItem(Math.floor(Math.random() * total.hair));
-    setMouthItem(Math.floor(Math.random() * total.mouth));
-    setGlassesItem(Math.floor(Math.random() * total.glasses));
-    setClothing1Item(Math.floor(Math.random() * total.clothing1));
-    setHatItem(Math.floor(Math.random() * total.hats));
+    setBodyItem(Math.floor(Math.random() * (total.body - 1) + 1));
+    setEyesItem(Math.floor(Math.random() * (total.eyes - 1) + 1));
+    seteyebrowsItem(Math.floor(Math.random() * (total.eyebrows - 1) + 1));
+    setHairItem(Math.floor(Math.random() * (total.hair - 1) + 1));
+    setMouthItem(Math.floor(Math.random() * (total.mouth - 1) + 1));
+    setGlassesItem(Math.floor(Math.random() * (total.glasses - 1) + 1));
+    setClothing1Item(Math.floor(Math.random() * (total.clothing1 - 1) + 1));
+    setHatItem(Math.floor(Math.random() * (total.hats - 1) + 1));
   };
   useEffect(() => {
     randomize();

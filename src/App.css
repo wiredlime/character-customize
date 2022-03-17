@@ -9,8 +9,9 @@ body {
   font-weight: 300;
   display: grid;
   grid-template-rows: 8rem auto;
-  grid-gap: 20px;
+  grid-gap: 10px;
   overflow-x: hidden;
+  padding-left: 60px;
 }
 hr {
   border: none;
@@ -139,20 +140,10 @@ hr {
   .avatar-displayer {
     width: 100%;
   }
+  .avatar-container {
+    position: static;
+  }
   .item-displayer {
     width: 100%;
   }
 }
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
