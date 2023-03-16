@@ -11,3 +11,4 @@
 - [ ] Users can select a different part and the avatar will reflect the change when the user clicks on a different item.
 - [ ] Users can "randomize" or randomly generate a character.
 
+##### Demo: [Character Game](https://character-customize-game.netlify.app/)
